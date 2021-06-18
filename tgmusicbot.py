@@ -35,8 +35,8 @@ MUSIC_CHATS = [
 MUSIC_USERS = [1234567890]
 MUSIC_DELAY_DELETE_INFORM = 10
 MUSIC_INFORM_AVAILABILITY = (
-    "This bot only serves the specified group and"
-    "its members in private chat"
+    "此機器人僅服務於指定的群組和"
+    "其成員在私人聊天"
 )
 MUSIC_MAX_LENGTH = 10800
 
@@ -122,21 +122,21 @@ async def _fetch_and_send_music(message: Message):
         # send a link as a reply to bypass Music category check
         if not message.reply_to_message \
                 and _youtube_video_not_music(info_dict):
-            inform = ("This video is not under Music category, "
-                      "you can resend the link as a reply "
-                      "to force download it")
+            inform = ("此視頻不屬於音樂類別, "
+                      "您可以回覆重新發送連結"
+                      "強制下載")
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
             return
         if info_dict['duration'] > MUSIC_MAX_LENGTH:
             readable_max_length = str(timedelta(seconds=MUSIC_MAX_LENGTH))
-            inform = ("This won't be downloaded because its audio length is "
-                      "longer than the limit `{}` which is set by the bot"
+            inform = ("這不會被下載，因為它的音頻長度是"
+                      "長於機器人設置的限制"
                       .format(readable_max_length))
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
             return
-        d_status = await message.reply_text("Downloading...", quote=True,
+        d_status = await message.reply_text("下載中...", quote=True,
                                             disable_notification=True)
         ydl.process_info(info_dict)
         audio_file = ydl.prepare_filename(info_dict)
