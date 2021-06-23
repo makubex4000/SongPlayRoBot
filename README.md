@@ -8,7 +8,7 @@
 
 ## Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/callsmusic/tgmusicbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makubex2010/tgmusicbot)
 
 ## Manually
 
@@ -20,7 +20,7 @@
 
 # 電報機器人令牌
 # 從 https://t.me/BotFather 獲取
-export BOT_TOKEN="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
+導出 BOT_TOKEN="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
 
 # 機器人服務的一個或多個用戶/組用戶名/ID，
 # 用空格隔開
