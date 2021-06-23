@@ -2,7 +2,7 @@
 
 用於 YouTube/SoundCloud/Mixcloud 的 Telegram 音樂機器人
 
-當有人發送 YouTube/SoundCloud/MixCloud 鏈接時，此機器人會下載並發送音頻
+當有人發送 YouTube/SoundCloud/MixCloud 連結時，此機器人會下載並發送音頻
 在指定的聊天中，有一個命令 `/ping` 使機器人回复“ping”
 用於檢查機器人是否正在運行。
 
