@@ -1,26 +1,26 @@
 """
 
-tgmusicbot, Telegram audio downloader bot
-Copyright (C) 2021  Dash Eclipse
+tgmusicbot，電報音頻下載機器人
+版權所有 (C) 2021 Dash Eclipse
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+該程序是免費軟件：您可以重新分發和/或修改
+它根據 GNU Affero 通用公共許可證的條款，由
+自由軟件基金會，許可證的第 3 版，或
+（由您選擇）任何更高版本。
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+這個程序是分發的，希望它有用，
+但沒有任何保證； 甚至沒有暗示的保證
+特定用途的適銷性或適用性。 見
+有關更多詳細信息，請參閱 GNU Affero 通用公共許可證。
 
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
+您應該已經收到一份 GNU Affero 通用公共許可證的副本
+隨著這個程序。 如果沒有，請參閱 <https://www.gnu.org/licenses/>。
 
 
-Download music from YouTube/SoundCloud/Mixcloud, convert thumbnail
-to square thumbnail and upload to Telegram
+從 YouTube/SoundCloud/Mixcloud 下載音樂，轉換縮略圖
+方形縮略圖並上傳到電報
 
-Send a link as a reply to bypass Music category check
+發送鏈接作為繞過音樂類別檢查的回覆
 
 # requirements.txt
 OpenCC
@@ -123,15 +123,15 @@ async def _fetch_and_send_music(message: Message):
         if not message.reply_to_message \
                 and _youtube_video_not_music(info_dict):
             inform = ("此視頻不屬於音樂類別, "
-                      "您可以回覆重新發送連結"
+                      "您可以在剛剛發送的連結"
+                      "回覆重新再發送一次連結"
                       "強制下載")
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
             return
         if info_dict['duration'] > MUSIC_MAX_LENGTH:
             readable_max_length = str(timedelta(seconds=MUSIC_MAX_LENGTH))
-            inform = ("這不會被下載，因為它的音頻長度是"
-                      "長於機器人設置的限制"
+            inform = ("音頻長度超過機器人設置的長度"
                       .format(readable_max_length))
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
