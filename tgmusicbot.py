@@ -147,7 +147,7 @@ async def _fetch_and_send_music(message: Message):
         while not task.done():
             await asyncio.sleep(4)
             await message.reply_chat_action("upload_document")
-        await message.reply_chat_action("取消")
+        await message.reply_chat_action("cancel")
         if message.chat.type == "private":
             await message.delete()
     except Exception as e:
