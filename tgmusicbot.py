@@ -122,7 +122,7 @@ async def _fetch_and_send_music(message: Message):
         # send a link as a reply to bypass Music category check
         if not message.reply_to_message \
                 and _youtube_video_not_music(info_dict):
-            inform = ("此影片不屬於音樂類別, "
+            inform = ("此影片不屬於音樂類別， "
                       "您可以在剛剛發送的連結"
                       "回覆，再發送一次連結"
                       "強制下載")
