@@ -16,19 +16,19 @@
   "logo": "https://i.imgur.com/RYqwBHA.jpg",
   "env": {
     "API_ID": {
-      "description": "api_id part of your Telegram API Key from my.telegram.org/apps",
+      "description": "api_id 部分來自 my.telegram.org/apps 的 Telegram API 密鑰",
       "required": true
     },
     "API_HASH": {
-      "description": "api_hash part of your Telegram API Key from my.telegram.org/apps",
+      "description": "來自 my.telegram.org/apps 的 Telegram API 密鑰的 api_hash 部分",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Bot token get from BotFather https://t.me/BotFather",
+      "description": "Bot 令牌從 BotFather @BotFather 獲取",
       "required": true
     },
     "MUSIC_CHATS": {
-      "description": "One or more user/group username/id the bot serves to, separate with space",
+      "description": "機器人服務的一個或多個用戶/組用戶名/ID，用空格分隔",
       "required": true
     }
   },
