@@ -6,11 +6,11 @@
 在指定的聊天中，有一個命令 `/ping` 使機器人回复“ping”
 用於檢查機器人是否正在運行。
 
-## Heroku
+## Heroku部屬
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makubex2010/tgmusicbot)
 
-## Manually
+## 手動部屬
 
 ```
 # 電報 API 密鑰
