@@ -123,8 +123,8 @@ async def _fetch_and_send_music(message: Message):
         if not message.reply_to_message \
                 and _youtube_video_not_music(info_dict):
             inform = ("此影片不屬於音樂類別， "
-                      "您可以在剛剛發送的連結"
-                      "回覆，再發送一次連結"
+                      "您可以在您發送的連結"
+                      "回覆剛剛發送的連結"
                       "強制下載")
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
@@ -136,7 +136,7 @@ async def _fetch_and_send_music(message: Message):
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
             return
-        d_status = await message.reply_text("下載中...", quote=True,
+        d_status = await message.reply_text("下載中，請稍後...", quote=True,
                                             disable_notification=True)
         ydl.process_info(info_dict)
         audio_file = ydl.prepare_filename(info_dict)
