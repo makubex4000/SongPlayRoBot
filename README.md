@@ -8,7 +8,7 @@
 
 ## Heroku部屬
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makubex2010/tgmusicbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makubex2010/Telegram-music-bot)
 
 ## 手動部屬
 
