@@ -124,7 +124,7 @@ async def _fetch_and_send_music(message: Message):
                 and _youtube_video_not_music(info_dict):
             inform = ("此影片不屬於音樂類別， "
                       "您可以在您發送的連結"
-                      "回覆剛剛發送的連結"
+                      "回覆剛剛的連結"
                       "強制下載")
             await _reply_and_delete_later(message, inform,
                                           DELAY_DELETE_INFORM)
