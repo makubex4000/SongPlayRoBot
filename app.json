@@ -12,7 +12,7 @@
     "youtube-dl",
     "python"
   ],
-  "repository": "https://github.com/makubex2010/tgmusicbot",
+  "repository": "https://github.com/makubex2010/Telegram-music-bot",
   "logo": "https://i.imgur.com/RYqwBHA.jpg",
   "env": {
     "API_ID": {
