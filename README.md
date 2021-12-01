@@ -33,25 +33,3 @@ apt安裝ffmpeg
 venv/bin/pip install -U -r requirements.txt
 venv/bin/python tgmusicbot.py
 ```
-
-＃＃ 執照
-
-AGPL-3.0 或更高版本
-
-```
-tgmusicbot，電報音頻下載機器人
-版權所有 (C) 2021 Dash Eclipse
-
-該程序是免費軟件：您可以重新分發和/或修改
-它根據 GNU Affero 通用公共許可證的條款，由
-自由軟件基金會，許可證的第 3 版，或
-（由您選擇）任何更高版本。
-
-這個程序是分發的，希望它有用，
-但沒有任何保證；甚至沒有暗示的保證
-特定用途的適銷性或適用性。見
-有關更多詳細信息，請參閱 GNU Affero 通用公共許可證。
-
-您應該已經收到一份 GNU Affero 通用公共許可證的副本
-隨著這個程序。如果沒有，請參閱 <https://www.gnu.org/licenses/>。
-```
