@@ -8,8 +8,9 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makubex2010/SongPlayRoBot)
 
-## 手動部屬
+## Manually
 
+```
 # Telegram API Key
 # get from https://my.telegram.org/apps
 export API_ID="1234567"
@@ -28,4 +29,5 @@ apt install ffmpeg
 
 virtualenv venv
 venv/bin/pip install -U -r requirements.txt
-venv/bin/python tgmusicbot.py
+venv/bin/python SongPlayRoBot.py
+```
