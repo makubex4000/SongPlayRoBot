@@ -29,7 +29,7 @@ def time_to_seconds(time):
 ## Commands --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    TamilBots = f'👋 嗨! @{message.from_user.username}\n\n我是 🎸歌曲播放機器人[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)\n\n發送你想要的歌名或網址... 😍🥰🤗例如:`/s 下雨天`'
+    TamilBots = f'👋 嗨! @{message.from_user.username}\n\n我是 🎸歌曲播放機器人[🎶](https://telegra.ph/file/6cb884fe1cb943ec12df1.mp4)\n\n發送你想要的歌名或網址... 😍🥰🤗例如:`/s 南拳媽媽-下雨天`'
     message.reply_text(
         text=TamilBots, 
         quote=False,
@@ -83,7 +83,7 @@ def a(client, message):
             return
     except Exception as e:
         m.edit(
-            "✖️ 沒有找到歌曲. 抱歉.\n\n嘗試另一個關鍵詞，或者填寫正確\n\n例如:`/s 下雨天`"
+            "✖️ 沒有找到歌曲. 抱歉.\n\n嘗試另一個關鍵詞，或者填寫正確\n\n例如:`/s 南拳媽媽-下雨天`"
         )
         print(str(e))
         return
