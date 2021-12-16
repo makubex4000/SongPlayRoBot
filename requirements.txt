@@ -2,4 +2,4 @@ Pillow
 Pyrogram
 TgCrypto
 ffmpeg-python
-https://github.com/lanegramling/youtube-dl
+yt-dlp
