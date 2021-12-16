@@ -10,21 +10,22 @@
 
 ## 手動部屬
 
-```
-# 電報 API 密鑰
-# 從 https://my.telegram.org/apps 獲取
-導出 API_ID="1234567"
-導出 API_HASH="0123456789abcdef0123456789abcdef"
+# Telegram API Key
+# get from https://my.telegram.org/apps
+export API_ID="1234567"
+export API_HASH="0123456789abcdef0123456789abcdef"
 
-# 電報機器人令牌
-# 從 https://t.me/BotFather 獲取
-導出 BOT_TOKEN="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
+# Telegram Bot Token
+# get from https://t.me/BotFather
+export BOT_TOKEN="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
 
+# One or more user/group username/id the bot serve to,
+# separate with space
+export MUSIC_CHATS="-100123456789 username"
 
-# 安裝 ffmpeg
-apt安裝ffmpeg
+# install ffmpeg
+apt install ffmpeg
 
-虛擬環境 venv
+virtualenv venv
 venv/bin/pip install -U -r requirements.txt
 venv/bin/python tgmusicbot.py
-```
