@@ -1,6 +1,6 @@
 # Telegram SongPlayRoBot
 
-Telegram bot for downloading audio from YouTube, SoundCloud & MixCloud.
+Telegram bot for downloading audio from YouTube.
 
 ![logo](https://telegra.ph/file/9d337b3414bbf8e39ba79.jpg)
 
