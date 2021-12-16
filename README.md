@@ -1,6 +1,6 @@
 # Telegram SongPlayRoBot
 
-用於 YouTube 的 Telegram 音樂機器人
+Telegram bot for downloading audio from YouTube, SoundCloud & MixCloud.
 
 ![logo](https://telegra.ph/file/9d337b3414bbf8e39ba79.jpg)
 
