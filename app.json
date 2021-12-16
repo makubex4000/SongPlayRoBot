@@ -1,0 +1,37 @@
+{
+  "name": "電報音樂機器人",
+  "description": "用於 YouTube 的 Telegram 音樂機器人",
+  "keywords": [
+    "telegram",
+    "bot",
+    "telegram_bot",
+    "music",
+    "youtube",
+    "yt-dlp",
+    "python"
+  ],
+  "repository": "https://github.com/makubex2010/SongPlayRoBot",
+  "logo": "https://i.imgur.com/RYqwBHA.jpg",
+  "env": {
+    "API_ID": {
+      "description": "api_id 部分來自 my.telegram.org/apps 的 Telegram API 密鑰",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "來自 my.telegram.org/apps 的 Telegram API 密鑰的 api_hash 部分",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot 令牌從 BotFather @BotFather 獲取",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
