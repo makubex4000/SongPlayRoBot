@@ -118,7 +118,7 @@ async def _fetch_and_send_music(message: Message):
             'writethumbnail': True
         }
         ydl = YoutubeDL(ydl_opts)
-        info_dict = ydl.extract_info(message.text, download=False)
+        info_dict = ydl.extract_info(message.text, download=True)
         # send a link as a reply to bypass Music category check
         if not message.reply_to_message \
                 and _youtube_video_not_music(info_dict):
