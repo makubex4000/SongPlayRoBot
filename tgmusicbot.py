@@ -171,7 +171,7 @@ async def _upload_audio(message: Message, info_dict, audio_file):
     basename = audio_file.rsplit(".", 1)[-2]
     if info_dict['ext'] == 'webm':
         audio_file_opus = basename + ".opus"
-        ffmpeg.input(audio_file).output(audio_file_opus, codec="copy").run()
+        ffmpeg.input(audio_file).output(audio_file_opus, codec="copy").run(capture_stdout=True, capture_stderr=True)
         os.remove(audio_file)
         audio_file = audio_file_opus
     thumbnail_url = info_dict['thumbnail']
