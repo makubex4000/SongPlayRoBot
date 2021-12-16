@@ -20,10 +20,6 @@ export API_HASH="0123456789abcdef0123456789abcdef"
 # get from https://t.me/BotFather
 export BOT_TOKEN="123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
 
-# One or more user/group username/id the bot serve to,
-# separate with space
-export MUSIC_CHATS="-100123456789 username"
-
 # install ffmpeg
 apt install ffmpeg
 
