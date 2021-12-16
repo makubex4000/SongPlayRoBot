@@ -1,10 +1,10 @@
-# Telegram 音樂機器人
+# Telegram SongPlayRoBot
 
 用於 YouTube 的 Telegram 音樂機器人
 
 ![logo](https://telegra.ph/file/9d337b3414bbf8e39ba79.jpg)
 
-## Heroku部屬
+## Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makubex2010/SongPlayRoBot)
 
