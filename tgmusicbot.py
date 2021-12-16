@@ -47,7 +47,7 @@ from datetime import timedelta
 from urllib.parse import urlparse
 from pyrogram import Client, filters, idle
 from pyrogram.types import Message
-from yt-dlp import YoutubeDL
+from mech import YoutubeDL
 from PIL import Image
 import ffmpeg
 
