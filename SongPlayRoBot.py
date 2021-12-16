@@ -79,11 +79,11 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('沒有找到歌曲，嘗試使用網址 😕')
+            m.edit('沒有找到歌曲，請嘗試使用網址 😕')
             return
     except Exception as e:
         m.edit(
-            "✖️ 沒有找到歌曲. 抱歉.\n\n嘗試另一個關鍵詞，或者填寫正確\n\n例如:`/s 南拳媽媽-下雨天`"
+            "✖️ 抱歉，沒有找到歌曲\n\n請嘗試其他關鍵詞或是用網址查詢\n\n例如:`/s 南拳媽媽-下雨天`"
         )
         print(str(e))
         return
