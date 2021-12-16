@@ -9,7 +9,7 @@
     "youtube",
     "soundcloud",
     "mixcloud",
-    "youtube-dl",
+    "yt-dlp",
     "python"
   ],
   "repository": "https://github.com/makubex2010/Telegram-music-bot",
