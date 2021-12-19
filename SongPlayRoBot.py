@@ -90,7 +90,7 @@ def a(client, message):
     m.edit("🔎 找到歌曲 🎶 請稍等 ⏳️ 幾秒鐘 [🚀](https://telegra.ph/file/b0bc12b5e2ea0065206fc.mp4)")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info_dict = ydl.extract_info(link, download=False)
+            info_dict = ydl.extract_info(link, download=True)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
         rep = f'🎧 標題 : [{title[:35]}]({link})\n⏳ 歌曲時間 : `{duration}`'
