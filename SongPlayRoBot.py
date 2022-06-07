@@ -37,7 +37,7 @@ def start(client, message):
             [
                 [
                     InlineKeyboardButton('問題回報 👬', url='https://t.me/Kevin_RX'),
-                    InlineKeyboardButton('有玩PlayStation歡迎加入群組 🤗', url='https://t.me/PlayStation4Tw')
+                    InlineKeyboardButton('有玩PlayStation歡迎加入群組 🤗', url='https://t.me/PlayStationTw')
                 ]
             ]
         )
