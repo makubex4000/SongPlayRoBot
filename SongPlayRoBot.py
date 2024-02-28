@@ -13,9 +13,9 @@ import os
 
 bot = Client(
     'SongPlayRoBot',
-    api_id = os.environ["API_ID"],
-    api_hash = os.environ["API_HASH"],
-    bot_token = os.environ["BOT_TOKEN"]
+    api_id = os.environ["2710398"],
+    api_hash = os.environ["e64c45a8f94ae642c090404e5f81f196"],
+    bot_token = os.environ["1800777638:AAF_U0_UtG8YTCSen5JmFBBLvZHLCXq9Vv4"]
 )
 
 ## Extra Fns -------------------------------
